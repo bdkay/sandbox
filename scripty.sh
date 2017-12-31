@@ -1,5 +1,5 @@
 # a million commits
-for Y in {2017..2018}
+for Y in {2016..2017}
 do
   mkdir $Y
   cd $Y
@@ -26,7 +26,7 @@ do
   cd ../
 done
 git push origin master
-git rm -rf 20**
-git rm -rf 19**
+git rm -rf 10**
+git rm -rf 9**
 git commit -am "cleanup"
 git push origin master
