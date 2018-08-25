@@ -1,17 +1,17 @@
 # a million commits
-for Y in {2016..2017}
+for Y in {2017..2017}
 do
   mkdir $Y
   cd $Y
-  for M in {01..12}
+  for M in {01..6}
   do
     mkdir $M
     cd $M
-    for D in {01..31}
+    for D in {01..15}
     do
       mkdir $D
       cd $D
-      for i in {01..12}
+      for i in {01..6}
       do
         echo "$i on $M/$D/$Y" > commit.md
         export GIT_COMMITTER_DATE="$Y-$M-$D 12:$i:00"
